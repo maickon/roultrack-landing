@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!-- Básico -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- SEO Primário -->
+        <title>RouleTrack Pro | Monitor de Roleta ao Vivo com Alertas Inteligentes</title>
+        <meta name="description" content="Sistema inteligente para roleta ao vivo. Monitore resultados em tempo real, detecte padrões e receba alertas automáticos para aplicar suas estratégias com precisão.">
+        <meta name="keywords" content="roleta ao vivo, monitor de roleta, estratégia roleta, alertas roleta, casino online, evolução roleta, pragmatic play roleta, análise roleta, sinais roleta">
+        <meta name="author" content="RouleTrack Pro">
+        <meta name="robots" content="index, follow">
+
+        <!-- Canonical -->
+        <link rel="canonical" href="https://seusite.com/">
+
+        <!-- Open Graph (Facebook / WhatsApp / Discord) -->
+        <meta property="og:title" content="RouleTrack Pro | Monitor Inteligente de Roleta">
+        <meta property="og:description" content="Acompanhe roletas ao vivo, identifique padrões e receba alertas automáticos em tempo real.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://seusite.com/">
+        <meta property="og:image" content="https://seusite.com/preview.png">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="RouleTrack Pro | Sistema para Roleta ao Vivo">
+        <meta name="twitter:description" content="Monitoramento em tempo real, análise de padrões e alertas inteligentes para roleta.">
+        <meta name="twitter:image" content="https://seusite.com/preview.png">
+
+        <!-- Performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- Fonts otimizadas -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="index.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="icon16.png" type="image/png">
+
+        <!-- Tema mobile -->
+        <meta name="theme-color" content="#0f172a">
+
+        <!-- Estruturação (Schema.org) -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "RouleTrack Pro",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Web",
+            "description": "Sistema inteligente para monitoramento de roleta ao vivo com alertas automáticos e análise de padrões.",
+            "url": "https://seusite.com/",
+            "image": "https://seusite.com/preview.png",
+            "author": {
+                "@type": "Organization",
+                "name": "RouleTrack Pro"
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <!-- ════════════════════════════════════════════════════════════ -->
+        <!--  CONFIG — edite este objeto para personalizar a página      -->
+        <!-- ════════════════════════════════════════════════════════════ -->
+        <script src="config.js"></script>
+        <!-- ════════ NAV ════════════════════════════════════════════════ -->
+        <nav class="nav" id="navbar">
+            <div class="nav-inner">
+                <div class="nav-logo" id="nav-logo">RouleTrack<span>Pro</span></div>
+                <div class="nav-links">
+                    <a href="#features"  class="nav-link">Recursos</a>
+                    <a href="#como-funciona" class="nav-link">Como funciona</a>
+                    <a href="#planos"    class="nav-link">Planos</a>
+                    <a href="#comprar"   class="nav-link">Adquirir</a>
+                    <a href="#faq"       class="nav-link">FAQ</a>
+                </div>
+                <div class="nav-cta">
+                    <a href="#comprar" class="btn btn-gold btn-sm" id="nav-cta-btn">Quero Agora</a>
+                </div>
+            </div>
+        </nav>
+        <!-- ════════ HERO ═══════════════════════════════════════════════ -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-inner">
+                    <div class="hero-text">
+                        <div class="hero-badge">Monitoramento ao vivo ativo</div>
+                        <h1 id="hero-title">Suas estratégias,<br><em>executadas com precisão</em></h1>
+                        <p class="hero-sub" id="hero-sub"></p>
+                        <div class="hero-ctas">
+                            <a href="#comprar" class="btn btn-gold btn-lg">🎯 Quero Agora</a>
+                            <button class="btn btn-ghost btn-lg" onclick="openInstallModal()">⬇ Como Instalar</button>
+                        </div>
+                        <div class="hero-stats" id="hero-stats"></div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-mockup">
+                            <div class="mockup-header">
+                                <span class="mockup-title">Auto Roulette</span>
+                                <span class="mockup-pill">● AO VIVO</span>
+                            </div>
+                            <div class="mockup-numbers" id="mock-numbers"></div>
+                            <div class="mockup-alert">
+                                <div class="mockup-alert-icon">⚡</div>
+                                <div>
+                                    <div class="mockup-alert-text">ENTRAR: 15 + 9 Vizinhos</div>
+                                    <div class="mockup-alert-sub">Padrão confirmado — zona detectada</div>
+                                </div>
+                            </div>
+                            <div class="mockup-strats" id="mock-strats"></div>
+                        </div>
+                        <div class="float-badge float-badge-1">🟢 Verde Antecipado</div>
+                        <div class="float-badge float-badge-2">📱 Alerta Telegram enviado</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ════════ PROBLEM ════════════════════════════════════════════ -->
+        <section class="problem section">
+            <div class="container text-center">
+                <span class="sec-tag">O Problema</span>
+                <h2 class="sec-h2">Você analisa — mas perde o <em>momento exato</em></h2>
+                <p class="sec-sub" style="margin:0 auto">A maior dificuldade não é ter uma boa estratégia. É conseguir aplicá-la com consistência, no momento certo, sem deixar escapar nenhum padrão.</p>
+                <div class="problem-grid">
+                    <div class="problem-card">
+                        <div class="problem-icon">😓</div>
+                        <h3>Olhos em mil lugares</h3>
+                        <p>Acompanhar os resultados, identificar padrões e decidir o momento de entrada ao mesmo tempo é humanamente difícil — e a distração custa caro.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">⏱️</div>
+                        <h3>Tarde demais ou cedo demais</h3>
+                        <p>Sem um sistema de confirmação, você entra antes da hora ou percebe o padrão depois que ele já passou. Segundos fazem diferença em roleta ao vivo.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">📉</div>
+                        <h3>Sem dados para analisar</h3>
+                        <p>Se você não registra os sinais, não sabe o que funciona. Sem histórico, cada sessão recomeça do zero — sem aprendizado, sem evolução.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ════════ FEATURES ═══════════════════════════════════════════ -->
+        <section class="section" id="features">
+            <div class="container">
+                <div class="text-center" style="margin-bottom:0">
+                    <span class="sec-tag">Recursos</span>
+                    <h2 class="sec-h2">Tudo que você precisa para <em>operar melhor</em></h2>
+                    <p class="sec-sub" style="margin:0 auto 52px">O RouleTrack Pro não toma decisões por você. Ele elimina o trabalho manual de análise para que você foque no que importa: a estratégia.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feat-card feat-highlight">
+                        <div class="feat-icon">👁️</div>
+                        <h3>Monitoramento 100% em Tempo Real</h3>
+                        <p>O plugin captura automaticamente cada número que sai na roleta ao vivo e mantém um histórico completo da sessão. Detecção inteligente com fallback automático para garantir que nenhum número seja perdido.</p>
+                    </div>
+                    <div class="feat-card">
+                        <div class="feat-icon">🧠</div>
+                        <h3>Motor de Estratégias Configurável</h3>
+                        <p>Configure quantas estratégias quiser (dentro do seu plano), cada uma com sua própria zona de números, rodadas de confirmação e galés. O sistema processa tudo em paralelo e de forma independente.</p>
+                    </div>
+                    <div class="feat-card">
+                        <div class="feat-icon">⚡</div>
+                        <h3>Alertas Triplos Simultâneos</h3>
+                        <p>Quando um padrão é confirmado: <strong>som de alerta</strong> na aba do jogo, <strong>banner visual</strong> no topo da tela (pulsante, impossível de ignorar) e <strong>mensagem no Telegram</strong> — tudo ao mesmo tempo.</p>
+                    </div>
+                    <div class="feat-card">
+                        <div class="feat-icon">📊</div>
+                        <h3>Histórico e Estatísticas por Estratégia</h3>
+                        <p>Cada estratégia acumula dados de GA, G0, G1, G2 e Loss. Veja a taxa de acerto real de cada configuração e otimize com base em dados — não em achismos.</p>
+                    </div>
+                    <div class="feat-card">
+                        <div class="feat-icon">📝</div>
+                        <h3>Modo Manual de Backup</h3>
+                        <p>Se a captura automática falhar por qualquer motivo, ative o Modo Manual e insira os resultados você mesmo. O sistema processa e analisa normalmente — sem perder nenhum dado.</p>
+                    </div>
+                    <div class="feat-card">
+                        <div class="feat-icon">🔒</div>
+                        <h3>Acesso por Licença Individual</h3>
+                        <p>Cada usuário tem sua própria licença vinculada ao e-mail. Controle de validade, limite de estratégias e funcionalidades configurados individualmente pelo operador.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ════════ HOW IT WORKS ════════════════════════════════════════ -->
+        <section class="how section" id="como-funciona">
+            <div class="container text-center">
+                <span class="sec-tag">Como Funciona</span>
+                <h2 class="sec-h2">Do padrão ao <em>alerta</em>, em segundos</h2>
+                <p class="sec-sub" style="margin:0 auto">O sistema passa por 4 fases automáticas para garantir que você só receba alertas de qualidade — não falsos positivos.</p>
+                <div class="how-steps">
+                    <div class="how-step">
+                        <div class="how-step-num">01</div>
+                        <h3>Aguardando</h3>
+                        <p>Sistema monitora os números que saem na roleta em tempo real, aguardando um número da zona configurada</p>
+                    </div>
+                    <div class="how-step">
+                        <div class="how-step-num">02</div>
+                        <h3>Confirmando</h3>
+                        <p>Zona atingida! O sistema aguarda as rodadas de confirmação sem repetir — filtrando ruído e falsos padrões</p>
+                    </div>
+                    <div class="how-step">
+                        <div class="how-step-num active">03</div>
+                        <h3>⚡ ALERTA!</h3>
+                        <p>Padrão confirmado — som toca, banner aparece, Telegram recebe. Você sabe exatamente quando entrar</p>
+                    </div>
+                    <div class="how-step">
+                        <div class="how-step-num">04</div>
+                        <h3>Resultado</h3>
+                        <p>Sistema registra o resultado (G0, G1, G2 ou Loss) e reinicia automaticamente para o próximo ciclo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ════════ PLANS ═══════════════════════════════════════════════ -->
+        <section class="section" id="planos">
+            <div class="container text-center">
+                <span class="sec-tag">Planos</span>
+                <h2 class="sec-h2">Escolha o plano <em>ideal para você</em></h2>
+                <p class="sec-sub" style="margin:0 auto">Sem contrato de longo prazo. Renovação mensal. Cancele quando quiser.</p>
+                <div class="plans-grid" id="plans-grid"></div>
+            </div>
+        </section>
+        <!-- ════════ HOW TO BUY ══════════════════════════════════════════ -->
+        <section class="buy section" id="comprar">
+            <div class="container text-center">
+                <span class="sec-tag">Como Adquirir</span>
+                <h2 class="sec-h2">Pronto para usar em <em>menos de 10 minutos</em></h2>
+                <p class="sec-sub" style="margin:0 auto">Processo simples, sem complicação. Veja o passo a passo:</p>
+                <div class="buy-steps">
+                    <div class="buy-step">
+                        <div class="buy-step-icon">⬇️</div>
+                        <div class="buy-step-num">PASSO 1</div>
+                        <h3>Baixe o Plugin</h3>
+                        <p>Faça o download do arquivo do plugin. É um arquivo .zip com a pasta da extensão pronta para instalar.</p>
+                        <a href="#" id="btn-download" class="btn btn-ghost btn-sm" style="margin-top:12px;display:inline-flex">Baixar Plugin</a>
+                    </div>
+                    <div class="buy-step">
+                        <div class="buy-step-icon">🔧</div>
+                        <div class="buy-step-num">PASSO 2</div>
+                        <h3>Instale no Chrome</h3>
+                        <p>Extraia o .zip, abra <strong>chrome://extensions</strong>, ative o modo desenvolvedor e carregue a pasta extraída.</p>
+                        <button class="btn btn-ghost btn-sm" style="margin-top:12px" onclick="openInstallModal()">Ver Instruções</button>
+                    </div>
+                    <div class="buy-step">
+                        <div class="buy-step-icon">💰</div>
+                        <div class="buy-step-num">PASSO 3</div>
+                        <h3>Faça o Pagamento</h3>
+                        <p>Pague via PIX para a chave abaixo. Escolha o plano desejado e efetue o pagamento do valor correspondente.</p>
+                    </div>
+                    <div class="buy-step">
+                        <div class="buy-step-icon">📱</div>
+                        <div class="buy-step-num">PASSO 4</div>
+                        <h3>Envie o Comprovante</h3>
+                        <p>Envie o comprovante via WhatsApp <strong>informando o e-mail</strong> que usará no login. Seu acesso é liberado em instantes.</p>
+                        <a href="#" id="btn-whatsapp" target="_blank" class="btn btn-gold btn-sm" style="margin-top:12px;display:inline-flex">📲 Abrir WhatsApp</a>
+                    </div>
+                </div>
+                <div class="buy-cta-box">
+                    <h3 style="font-family:var(--font-disp);font-size:24px;font-weight:800;margin-bottom:8px">Chave PIX para Pagamento</h3>
+                    <p style="color:var(--muted);font-size:14px;margin-bottom:4px">Titular: <span id="pix-name" style="color:var(--text);font-weight:600"></span></p>
+                    <div class="buy-pix-box">
+                        <div>
+                            <div class="buy-pix-label">CHAVE PIX</div>
+                            <div id="pix-key-display" style="font-weight:700"></div>
+                        </div>
+                        <button class="btn-copy" id="btn-copy-pix" onclick="copyPix()">Copiar</button>
+                    </div>
+                    <p style="color:var(--muted);font-size:13px;margin-bottom:24px">Após pagar, envie o comprovante com seu <strong style="color:var(--text)">e-mail de acesso</strong> via WhatsApp</p>
+                    <a href="#" id="buy-whatsapp-btn" target="_blank" class="btn btn-gold btn-lg">📲 Enviar Comprovante pelo WhatsApp</a>
+                </div>
+            </div>
+        </section>
+        <!-- ════════ FAQ ═════════════════════════════════════════════════ -->
+        <section class="section" id="faq">
+            <div class="container text-center">
+                <span class="sec-tag">Dúvidas Frequentes</span>
+                <h2 class="sec-h2">Perguntas <em>mais comuns</em></h2>
+                <div class="faq-list" id="faq-list"></div>
+            </div>
+        </section>
+        <!-- ════════ FINAL CTA ═══════════════════════════════════════════ -->
+        <section class="final-cta">
+            <div class="container">
+                <h2>Chega de perder por falta de <em class="text-accent">atenção</em></h2>
+                <p>O sistema analisa, você decide. Simples assim.</p>
+                <a href="#comprar" class="btn btn-gold btn-lg">🎯 Quero o RouleTrack Pro Agora</a>
+            </div>
+        </section>
+        <!-- ════════ FOOTER ══════════════════════════════════════════════ -->
+        <footer>
+            <div class="container">
+                <p style="font-size:16px;font-weight:700;margin-bottom:8px"><span id="footer-name"></span></p>
+                <p id="footer-disclaimer"></p>
+            </div>
+        </footer>
+        <!-- ════════ INSTALL MODAL ══════════════════════════════════════ -->
+        <div class="modal-overlay" id="install-modal" onclick="closeInstallModal(event)">
+            <div class="modal-box">
+                <button class="modal-close" onclick="closeInstallModal()">✕</button>
+                <div class="modal-title">⬇ Como Instalar o Plugin</div>
+                <div class="install-steps">
+                    <div class="install-step">
+                        <div class="ist-num">1</div>
+                        <p>Clique em <strong>"Baixar Plugin"</strong> e salve o arquivo .zip no seu computador</p>
+                    </div>
+                    <div class="install-step">
+                        <div class="ist-num">2</div>
+                        <p><strong>Extraia o .zip</strong> — você terá uma pasta chamada <strong>game-tracker-extension</strong></p>
+                    </div>
+                    <div class="install-step">
+                        <div class="ist-num">3</div>
+                        <p>No Chrome, acesse <strong>chrome://extensions</strong> na barra de endereços</p>
+                    </div>
+                    <div class="install-step">
+                        <div class="ist-num">4</div>
+                        <p>Ative o <strong>"Modo do desenvolvedor"</strong> (toggle no canto superior direito)</p>
+                    </div>
+                    <div class="install-step">
+                        <div class="ist-num">5</div>
+                        <p>Clique em <strong>"Carregar sem compactação"</strong> e selecione a pasta extraída</p>
+                    </div>
+                    <div class="install-step">
+                        <div class="ist-num">6</div>
+                        <p>O ícone do plugin aparecerá na barra do Chrome. Faça login com o e-mail após liberar o acesso 🎉</p>
+                    </div>
+                </div>
+                <div style="margin-top:24px;text-align:center">
+                    <a href="#comprar" class="btn btn-gold" onclick="closeInstallModal()">Quero Adquirir Agora →</a>
+                </div>
+            </div>
+        </div>
+        <!-- ════════════════════════════════════════════════════════════ -->
+        <!--  SCRIPT — renderiza tudo a partir do CONFIG acima           -->
+        <!-- ════════════════════════════════════════════════════════════ -->
+        <script src="index.js"></script>
+    </body>
+</html>
